@@ -1,0 +1,36 @@
+2016-10-27 20:19:45 [5.19.200.233][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 5.19.200.233
+    in /spool/www/belk/www/basic/views/layouts/main.php:75
+    in /spool/www/belk/www/basic/controllers/SiteController.php:63
+2016-10-27 20:19:45 [5.19.200.233][-][-][info][application] $_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_FILENAME' => '/www/belk/www/basic/web/index.php'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'REQUEST_URI' => '/basic/web/'
+    'DOCUMENT_URI' => '/basic/web/index.php'
+    'DOCUMENT_ROOT' => '/www/belk/www'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.4.6'
+    'REMOTE_ADDR' => '5.19.200.233'
+    'REMOTE_PORT' => '52271'
+    'SERVER_ADDR' => '192.168.1.103'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'belk.ljs.ru'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'belk.ljs.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1477599584.9901
+    'REQUEST_TIME' => 1477599584
+]
