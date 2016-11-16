@@ -35,6 +35,7 @@ class Generator extends \yii\gii\Generator
     public $modelClass;
     public $baseClass = 'yii\db\ActiveRecord';
     public $generateRelations = self::RELATIONS_ALL;
+    public $generateRelationsFromCurrentSchema = true;
     public $generateLabelsFromComments = false;
     public $useTablePrefix = false;
     public $useSchemaName = true;
@@ -67,7 +68,7 @@ class Generator extends \yii\gii\Generator
     {
         return array_merge(parent::rules(), [
             [['db', 'ns', 'tableName', 'modelClass', 'baseClass', 'queryNs', 'queryClass', 'queryBaseClass'], 'filter', 'filter' => 'trim'],
-            [['ns', 'queryNs'], 'filter', 'filter' => function($value) { return trim($value, '\\'); }],
+            [['ns', 'queryNs'], 'filter', 'filter' => function ($value) { return trim($value, '\\'); }],
 
             [['db', 'ns', 'tableName', 'baseClass', 'queryNs', 'queryBaseClass'], 'required'],
             [['db', 'modelClass', 'queryClass'], 'match', 'pattern' => '/^\w+$/', 'message' => 'Only word characters are allowed.'],
@@ -80,7 +81,7 @@ class Generator extends \yii\gii\Generator
             [['baseClass'], 'validateClass', 'params' => ['extends' => ActiveRecord::className()]],
             [['queryBaseClass'], 'validateClass', 'params' => ['extends' => ActiveQuery::className()]],
             [['generateRelations'], 'in', 'range' => [self::RELATIONS_NONE, self::RELATIONS_ALL, self::RELATIONS_ALL_INVERSE]],
-            [['generateLabelsFromComments', 'useTablePrefix', 'useSchemaName', 'generateQuery'], 'boolean'],
+            [['generateLabelsFromComments', 'useTablePrefix', 'useSchemaName', 'generateQuery', 'generateRelationsFromCurrentSchema'], 'boolean'],
             [['enableI18N'], 'boolean'],
             [['messageCategory'], 'validateMessageCategory', 'skipOnEmpty' => false],
         ]);
@@ -95,9 +96,10 @@ class Generator extends \yii\gii\Generator
             'ns' => 'Namespace',
             'db' => 'Database Connection ID',
             'tableName' => 'Table Name',
-            'modelClass' => 'Model Class',
+            'modelClass' => 'Model Class Name',
             'baseClass' => 'Base Class',
             'generateRelations' => 'Generate Relations',
+            'generateRelationsFromCurrentSchema' => 'Generate Relations from Current Schema',
             'generateLabelsFromComments' => 'Generate Labels from DB Comments',
             'generateQuery' => 'Generate ActiveQuery',
             'queryNs' => 'ActiveQuery Namespace',
@@ -129,6 +131,7 @@ class Generator extends \yii\gii\Generator
             'generateRelations' => 'This indicates whether the generator should generate relations based on
                 foreign key constraints it detects in the database. Note that if your database contains too many tables,
                 you may want to uncheck this option to accelerate the code generation process.',
+            'generateRelationsFromCurrentSchema' => 'This indicates whether the generator should generate relations from current schema or from all available schemas.',
             'generateLabelsFromComments' => 'This indicates whether the generator should generate attribute labels
                 by using the comments of the corresponding DB columns.',
             'useTablePrefix' => 'This indicates whether the table name returned by the generated ActiveRecord class
@@ -189,12 +192,12 @@ class Generator extends \yii\gii\Generator
      */
     public function getTablePrefix()
     {
-      $db = $this->getDbConnection();
-      if ($db !== null) {
-          return $db->tablePrefix;
-      } else {
-          return '';
-      }
+        $db = $this->getDbConnection();
+        if ($db !== null) {
+            return $db->tablePrefix;
+        } else {
+            return '';
+        }
     }
 
     /**
@@ -383,6 +386,11 @@ class Generator extends \yii\gii\Generator
             $table0Schema = $db->getTableSchema($table0);
             $table1Schema = $db->getTableSchema($table1);
 
+            // @see https://github.com/yiisoft/yii2-gii/issues/166
+            if ($table0Schema === null || $table1Schema === null) {
+                continue;
+            }
+
             $link = $this->generateRelationLink(array_flip($secondKey));
             $viaLink = $this->generateRelationLink($firstKey);
             $relationName = $this->generateRelationName($relations, $table0Schema, key($secondKey), true);
@@ -415,6 +423,14 @@ class Generator extends \yii\gii\Generator
     protected function getSchemaNames()
     {
         $db = $this->getDbConnection();
+
+        if ($this->generateRelationsFromCurrentSchema) {
+            if ($db->schema->defaultSchema !== null) {
+                return [$db->schema->defaultSchema];
+            }
+            return [];
+        }
+
         $schema = $db->getSchema();
         if ($schema->hasMethod('getSchemaNames')) { // keep BC to Yii versions < 2.0.4
             try {
@@ -443,9 +459,9 @@ class Generator extends \yii\gii\Generator
         }
 
         $db = $this->getDbConnection();
-
         $relations = [];
-        foreach ($this->getSchemaNames() as $schemaName) {
+        $schemaNames = $this->getSchemaNames();
+        foreach ($schemaNames as $schemaName) {
             foreach ($db->getSchema()->getTableSchemas($schemaName) as $table) {
                 $className = $this->generateClassName($table->fullName);
                 foreach ($table->foreignKeys as $refs) {
@@ -503,13 +519,16 @@ class Generator extends \yii\gii\Generator
      */
     protected function addInverseRelations($relations)
     {
+        $db = $this->getDbConnection();
         $relationNames = [];
-        foreach ($this->getSchemaNames() as $schemaName) {
-            foreach ($this->getDbConnection()->getSchema()->getTableSchemas($schemaName) as $table) {
+
+        $schemaNames = $this->getSchemaNames();
+        foreach ($schemaNames as $schemaName) {
+            foreach ($db->schema->getTableSchemas($schemaName) as $table) {
                 $className = $this->generateClassName($table->fullName);
                 foreach ($table->foreignKeys as $refs) {
                     $refTable = $refs[0];
-                    $refTableSchema = $this->getDbConnection()->getTableSchema($refTable);
+                    $refTableSchema = $db->getTableSchema($refTable);
                     unset($refs[0]);
                     $fks = array_keys($refs);
 
@@ -626,14 +645,28 @@ class Generator extends \yii\gii\Generator
      */
     protected function generateRelationName($relations, $table, $key, $multiple)
     {
-        if (!empty($key) && substr_compare($key, 'id', -2, 2, true) === 0 && strcasecmp($key, 'id')) {
-            $key = rtrim(substr($key, 0, -2), '_');
+        static $baseModel;
+        /* @var $baseModel \yii\db\ActiveRecord */
+        if ($baseModel === null) {
+            $baseClass = $this->baseClass;
+            $baseModel = new $baseClass();
+            $baseModel->setAttributes([]);
+        }
+        if (!empty($key) && strcasecmp($key, 'id')) {
+            if (substr_compare($key, 'id', -2, 2, true) === 0) {
+                $key = rtrim(substr($key, 0, -2), '_');
+            } elseif (substr_compare($key, 'id', 0, 2, true) === 0) {
+                $key = ltrim(substr($key, 2, strlen($key)), '_');
+            }
         }
         if ($multiple) {
             $key = Inflector::pluralize($key);
         }
         $name = $rawName = Inflector::id2camel($key, '_');
         $i = 0;
+        while ($baseModel->hasProperty(lcfirst($name))) {
+            $name = $rawName . ($i++);
+        }
         while (isset($table->columns[lcfirst($name)])) {
             $name = $rawName . ($i++);
         }

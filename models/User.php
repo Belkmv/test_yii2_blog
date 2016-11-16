@@ -34,7 +34,7 @@ class User extends ActiveRecord implements IdentityInterface
         return [
             [['username', 'name', 'surname','password'], 'required'],
             ['username', 'email'],
-            ['username', 'enique'],
+
         ];
     }
 

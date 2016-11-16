@@ -11,6 +11,8 @@ $config = [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => 'xgImpLMstMe7-cbvOEzm40_UfF3K9eEM',
         ],
+
+
         'cache' => [
             'class' => 'yii\caching\FileCache',
         ],
@@ -57,9 +59,11 @@ if (YII_ENV_DEV) {
         'class' => 'yii\debug\Module',
     ];
 
+
     $config['bootstrap'][] = 'gii';
     $config['modules']['gii'] = [
         'class' => 'yii\gii\Module',
+        'allowedIPs' => [ '5.19.200.233' ],
     ];
 }
 

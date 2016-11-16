@@ -1,7 +1,7 @@
 Webmozart Assert
 ================
 
-[![Build Status](https://travis-ci.org/webmozart/assert.svg?branch=1.1.0)](https://travis-ci.org/webmozart/assert)
+[![Build Status](https://travis-ci.org/webmozart/assert.svg?branch=master)](https://travis-ci.org/webmozart/assert)
 [![Build status](https://ci.appveyor.com/api/projects/status/lyg83bcsisrr94se/branch/master?svg=true)](https://ci.appveyor.com/project/webmozart/assert/branch/master)
 [![Latest Stable Version](https://poser.pugx.org/webmozart/assert/v/stable.svg)](https://packagist.org/packages/webmozart/assert)
 [![Total Downloads](https://poser.pugx.org/webmozart/assert/downloads.svg)](https://packagist.org/packages/webmozart/assert)
@@ -179,6 +179,7 @@ Method                                      | Description
 ------------------------------------------- | --------------------------------------------------
 `keyExists($array, $key, $message = '')`    | Check that a key exists in an array
 `keyNotExists($array, $key, $message = '')` | Check that a key does not exist in an array
+`count($array, $number, $message = '')`     | Check that an array contains a specific number of elements
 
 ### Collection Assertions
 
@@ -186,7 +187,7 @@ All of the above assertions can be prefixed with `all*()` to test the contents
 of an array or a `\Traversable`:
 
 ```php
-Assert::allIsInstanceOf('Acme\Employee', $employees);
+Assert::allIsInstanceOf($employees, 'Acme\Employee');
 ```
 
 ### Nullable Assertions

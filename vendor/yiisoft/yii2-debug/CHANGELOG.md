@@ -1,6 +1,28 @@
 Yii Framework 2 debug extension Change Log
 ==========================================
 
+2.0.7 under development
+-----------------------
+
+- Enh: Mouse wheel click, or Ctrl+Click opens debugger in new tab (silverfire)
+- Enh: `yii\debug\Module::defaultVersion()` implemented to pick up 'yiisoft/yii2-debug' extension version (klimov-paul)
+- Bug #99: Avoid serializing php7 errors (zuozp8)
+- Bug #111: Fixed `LogTarget` to work properly when tests are ran via Codeception (samdark, nlmedina)
+- Bug #120: Fixed toolbar height changing when opened/closed and when using bootstrap (nkovacs)
+- Bug #148: Don't animate iframe needlessly when window is resized. (nkovacs)
+- Bug #93: Fixed `AssetPanel` error when bundle `$js` or `$css` contained `jsOptions` overrides (Razzwan, samdark)
+- Enh #105: Enhanced `ConfigPanel` to detect and report memcached extension presence (samdark)
+- Enh #115: Make the default panel configurable and set it to `log` (mikehaertl)
+- Enh #117: Added ability to customize the logo with `Module::setYiiLogo()` (brandonkelly)
+- Enh #58: Added timeline panel (bashkarev)
+- Enh #143: Added application version display at `ConfigPanel` (klimov-paul)
+- Enh #145: The error and warning labels of the log section on the summary bar now link directly to the log page filtered by log level type (rhertogh)
+- Bug #150: Fixed "Cannot read property 'replaceChild' of null" error (BetsuNo)
+- Enh #97: Added AJAX requests handling (bashkarev)
+- Bug #61: Fixed toolbar not to be cached by using renderDynamic (dynasource)
+- Bug #160: Remove height as it prevents the background from stretching, causing unreadable overlapping texts over background (dynasource)
+- Enh #162: Added ability to config the trace file and line number (thiagotalma)
+
 2.0.6 March 17, 2016
 --------------------
 
