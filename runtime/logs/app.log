@@ -8130,3 +8130,556 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1479324236.727
     'REQUEST_TIME' => 1479324236
 ]
+2016-11-17 12:00:17 [66.102.9.11][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 66.102.9.11
+    in /spool/www/belk/www/basic/views/layouts/main.php:75
+    in /spool/www/belk/www/basic/controllers/SiteController.php:63
+2016-11-17 12:00:17 [66.102.9.11][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 66.102.9.11
+2016-11-17 12:00:17 [66.102.9.11][-][-][info][application] $_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_FILENAME' => '/www/belk/www/basic/web/index.php'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'REQUEST_URI' => '/basic/web/'
+    'DOCUMENT_URI' => '/basic/web/index.php'
+    'DOCUMENT_ROOT' => '/www/belk/www'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.4.6'
+    'REMOTE_ADDR' => '66.102.9.11'
+    'REMOTE_PORT' => '38904'
+    'SERVER_ADDR' => '192.168.1.103'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'belk.ljs.ru'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'belk.ljs.ru'
+    'HTTP_CONNECTION' => 'Keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36 Google Favicon'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,br'
+    'HTTP_X_FORWARDED_FOR' => '5.19.200.233'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1479384017.4239
+    'REQUEST_TIME' => 1479384017
+]
+2016-11-18 08:03:45 [5.19.200.233][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 5.19.200.233
+    in /spool/www/belk/www/basic/views/layouts/main.php:75
+    in /spool/www/belk/www/basic/controllers/SiteController.php:63
+2016-11-18 08:03:45 [5.19.200.233][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 5.19.200.233
+2016-11-18 08:03:45 [5.19.200.233][-][-][info][application] $_COOKIE = [
+    '_csrf' => '80abe1c178ddee5b1fefffb3746627475888bf69db95c1c75005e747ccf96b8aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"q-IcETidU66KkkvStTUqvLvgxbihSVxu\";}'
+    'PHPSESSID' => '0cghlo8dgmulra2uln5tcbbqc0'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_FILENAME' => '/www/belk/www/basic/web/index.php'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'REQUEST_URI' => '/basic/web/index.php'
+    'DOCUMENT_URI' => '/basic/web/index.php'
+    'DOCUMENT_ROOT' => '/www/belk/www'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.4.6'
+    'REMOTE_ADDR' => '5.19.200.233'
+    'REMOTE_PORT' => '49935'
+    'SERVER_ADDR' => '192.168.1.103'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'belk.ljs.ru'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'belk.ljs.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://belk.ljs.ru/basic/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=80abe1c178ddee5b1fefffb3746627475888bf69db95c1c75005e747ccf96b8aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22q-IcETidU66KkkvStTUqvLvgxbihSVxu%22%3B%7D; PHPSESSID=0cghlo8dgmulra2uln5tcbbqc0'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1479456225.383
+    'REQUEST_TIME' => 1479456225
+]
+2016-11-19 00:51:14 [66.102.9.11][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 66.102.9.11
+    in /spool/www/belk/www/basic/views/layouts/main.php:75
+    in /spool/www/belk/www/basic/controllers/SiteController.php:63
+2016-11-19 00:51:14 [66.102.9.11][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 66.102.9.11
+2016-11-19 00:51:14 [66.102.9.11][-][-][info][application] $_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_FILENAME' => '/www/belk/www/basic/web/index.php'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'REQUEST_URI' => '/basic/web/'
+    'DOCUMENT_URI' => '/basic/web/index.php'
+    'DOCUMENT_ROOT' => '/www/belk/www'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.4.6'
+    'REMOTE_ADDR' => '66.102.9.11'
+    'REMOTE_PORT' => '45487'
+    'SERVER_ADDR' => '192.168.1.103'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'belk.ljs.ru'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'belk.ljs.ru'
+    'HTTP_CONNECTION' => 'Keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36 Google Favicon'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,br'
+    'HTTP_X_FORWARDED_FOR' => '5.19.200.233'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1479516674.7025
+    'REQUEST_TIME' => 1479516674
+]
+2016-11-20 14:28:34 [66.102.9.5][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 66.102.9.5
+    in /spool/www/belk/www/basic/views/layouts/main.php:75
+    in /spool/www/belk/www/basic/controllers/SiteController.php:63
+2016-11-20 14:28:34 [66.102.9.5][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 66.102.9.5
+2016-11-20 14:28:34 [66.102.9.5][-][-][info][application] $_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_FILENAME' => '/www/belk/www/basic/web/index.php'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'REQUEST_URI' => '/basic/web/'
+    'DOCUMENT_URI' => '/basic/web/index.php'
+    'DOCUMENT_ROOT' => '/www/belk/www'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.4.6'
+    'REMOTE_ADDR' => '66.102.9.5'
+    'REMOTE_PORT' => '56143'
+    'SERVER_ADDR' => '192.168.1.103'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'belk.ljs.ru'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'belk.ljs.ru'
+    'HTTP_CONNECTION' => 'Keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36 Google Favicon'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,br'
+    'HTTP_X_FORWARDED_FOR' => '5.19.200.233'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1479652114.6836
+    'REQUEST_TIME' => 1479652114
+]
+2016-11-22 08:19:48 [66.102.9.5][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 66.102.9.5
+    in /spool/www/belk/www/basic/views/layouts/main.php:75
+    in /spool/www/belk/www/basic/controllers/SiteController.php:63
+2016-11-22 08:19:48 [66.102.9.5][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 66.102.9.5
+2016-11-22 08:19:47 [66.102.9.5][-][-][info][application] $_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_FILENAME' => '/www/belk/www/basic/web/index.php'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'REQUEST_URI' => '/basic/web/'
+    'DOCUMENT_URI' => '/basic/web/index.php'
+    'DOCUMENT_ROOT' => '/www/belk/www'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.4.6'
+    'REMOTE_ADDR' => '66.102.9.5'
+    'REMOTE_PORT' => '52845'
+    'SERVER_ADDR' => '192.168.1.103'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'belk.ljs.ru'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'belk.ljs.ru'
+    'HTTP_CONNECTION' => 'Keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36 Google Favicon'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,br'
+    'HTTP_X_FORWARDED_FOR' => '5.19.200.233'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1479802787.3293
+    'REQUEST_TIME' => 1479802787
+]
+2016-11-23 07:49:07 [66.102.9.5][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 66.102.9.5
+    in /spool/www/belk/www/basic/views/layouts/main.php:75
+    in /spool/www/belk/www/basic/controllers/SiteController.php:63
+2016-11-23 07:49:07 [66.102.9.5][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 66.102.9.5
+2016-11-23 07:49:07 [66.102.9.5][-][-][info][application] $_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_FILENAME' => '/www/belk/www/basic/web/index.php'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'REQUEST_URI' => '/basic/web/'
+    'DOCUMENT_URI' => '/basic/web/index.php'
+    'DOCUMENT_ROOT' => '/www/belk/www'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.4.6'
+    'REMOTE_ADDR' => '66.102.9.5'
+    'REMOTE_PORT' => '34143'
+    'SERVER_ADDR' => '192.168.1.103'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'belk.ljs.ru'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'belk.ljs.ru'
+    'HTTP_CONNECTION' => 'Keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36 Google Favicon'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,br'
+    'HTTP_X_FORWARDED_FOR' => '5.19.200.233'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1479887347.2269
+    'REQUEST_TIME' => 1479887347
+]
+2016-11-24 17:37:32 [5.19.200.233][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 5.19.200.233
+    in /spool/www/belk/www/basic/views/layouts/main.php:75
+    in /spool/www/belk/www/basic/controllers/SiteController.php:63
+2016-11-24 17:37:32 [5.19.200.233][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 5.19.200.233
+2016-11-24 17:37:32 [5.19.200.233][-][-][info][application] $_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_FILENAME' => '/www/belk/www/basic/web/index.php'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'REQUEST_URI' => '/basic/web/'
+    'DOCUMENT_URI' => '/basic/web/index.php'
+    'DOCUMENT_ROOT' => '/www/belk/www'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.4.6'
+    'REMOTE_ADDR' => '5.19.200.233'
+    'REMOTE_PORT' => '53444'
+    'SERVER_ADDR' => '192.168.1.103'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'belk.ljs.ru'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'belk.ljs.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480009052.8492
+    'REQUEST_TIME' => 1480009052
+]
+2016-11-24 17:37:43 [5.19.200.233][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 5.19.200.233
+    in /spool/www/belk/www/basic/views/layouts/main.php:75
+    in /spool/www/belk/www/basic/controllers/UserController.php:73
+2016-11-24 17:37:43 [5.19.200.233][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 5.19.200.233
+2016-11-24 17:37:43 [5.19.200.233][-][-][info][application] $_GET = [
+    'r' => 'user/create'
+]
+
+$_COOKIE = [
+    '_csrf' => '40a6eda0142325f618b1cfe87c2315a8125038f0aef2839010e3c722947966c6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"x40WHGthoe2R8weQSChFYcRsZglK00EJ\";}'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'QUERY_STRING' => 'r=user/create'
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_FILENAME' => '/www/belk/www/basic/web/index.php'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'REQUEST_URI' => '/basic/web/?r=user/create'
+    'DOCUMENT_URI' => '/basic/web/index.php'
+    'DOCUMENT_ROOT' => '/www/belk/www'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.4.6'
+    'REMOTE_ADDR' => '5.19.200.233'
+    'REMOTE_PORT' => '53445'
+    'SERVER_ADDR' => '192.168.1.103'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'belk.ljs.ru'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'belk.ljs.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=40a6eda0142325f618b1cfe87c2315a8125038f0aef2839010e3c722947966c6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22x40WHGthoe2R8weQSChFYcRsZglK00EJ%22%3B%7D'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480009063.4104
+    'REQUEST_TIME' => 1480009063
+]
+2016-11-24 17:37:52 [5.19.200.233][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 5.19.200.233
+    in /spool/www/belk/www/basic/views/layouts/main.php:75
+    in /spool/www/belk/www/basic/controllers/SiteController.php:83
+2016-11-24 17:37:52 [5.19.200.233][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 5.19.200.233
+2016-11-24 17:37:52 [5.19.200.233][-][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    '_csrf' => '40a6eda0142325f618b1cfe87c2315a8125038f0aef2839010e3c722947966c6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"x40WHGthoe2R8weQSChFYcRsZglK00EJ\";}'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_FILENAME' => '/www/belk/www/basic/web/index.php'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'REQUEST_URI' => '/basic/web/index.php?r=site%2Flogin'
+    'DOCUMENT_URI' => '/basic/web/index.php'
+    'DOCUMENT_ROOT' => '/www/belk/www'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.4.6'
+    'REMOTE_ADDR' => '5.19.200.233'
+    'REMOTE_PORT' => '53445'
+    'SERVER_ADDR' => '192.168.1.103'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'belk.ljs.ru'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'belk.ljs.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://belk.ljs.ru/basic/web/?r=user/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=40a6eda0142325f618b1cfe87c2315a8125038f0aef2839010e3c722947966c6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22x40WHGthoe2R8weQSChFYcRsZglK00EJ%22%3B%7D'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480009072.6251
+    'REQUEST_TIME' => 1480009072
+]
+2016-11-24 17:37:54 [5.19.200.233][3][iflkjfdu55seuo5j02oa5vi6c6][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: app\models\User::auth_key' in /spool/www/belk/www/basic/vendor/yiisoft/yii2/base/Component.php:145
+Stack trace:
+#0 /spool/www/belk/www/basic/vendor/yiisoft/yii2/db/BaseActiveRecord.php(286): yii\base\Component->__get('auth_key')
+#1 /spool/www/belk/www/basic/models/User.php(141): yii\db\BaseActiveRecord->__get('auth_key')
+#2 /spool/www/belk/www/basic/vendor/yiisoft/yii2/web/User.php(538): app\models\User->getAuthKey()
+#3 /spool/www/belk/www/basic/vendor/yiisoft/yii2/web/User.php(632): yii\web\User->sendIdentityCookie(Object(app\models\User), 2592000)
+#4 /spool/www/belk/www/basic/vendor/yiisoft/yii2/web/User.php(241): yii\web\User->switchIdentity(Object(app\models\User), 2592000)
+#5 /spool/www/belk/www/basic/models/LoginForm.php(63): yii\web\User->login(Object(app\models\User), 2592000)
+#6 /spool/www/belk/www/basic/controllers/SiteController.php(78): app\models\LoginForm->login()
+#7 [internal function]: app\controllers\SiteController->actionLogin()
+#8 /spool/www/belk/www/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#9 /spool/www/belk/www/basic/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#10 /spool/www/belk/www/basic/vendor/yiisoft/yii2/base/Module.php(524): yii\base\Controller->runAction('login', Array)
+#11 /spool/www/belk/www/basic/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/login', Array)
+#12 /spool/www/belk/www/basic/vendor/yiisoft/yii2/base/Application.php(373): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /spool/www/belk/www/basic/web/index.php(12): yii\base\Application->run()
+#14 {main}
+2016-11-24 17:37:54 [5.19.200.233][3][iflkjfdu55seuo5j02oa5vi6c6][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 5.19.200.233
+2016-11-24 17:37:54 [5.19.200.233][3][iflkjfdu55seuo5j02oa5vi6c6][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 5.19.200.233
+2016-11-24 17:37:54 [5.19.200.233][3][iflkjfdu55seuo5j02oa5vi6c6][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf' => 'S1B2dldXSjQzZEYhHxA.XCQ1RCRvIC9lGBMeMA40GEcRNxo9Z2cPfg=='
+    'LoginForm' => [
+        'username' => 'pasportbelk@mail.ru'
+        'password' => '111111'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf' => '40a6eda0142325f618b1cfe87c2315a8125038f0aef2839010e3c722947966c6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"x40WHGthoe2R8weQSChFYcRsZglK00EJ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 3
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_METHOD' => 'POST'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '213'
+    'SCRIPT_FILENAME' => '/www/belk/www/basic/web/index.php'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'REQUEST_URI' => '/basic/web/index.php?r=site%2Flogin'
+    'DOCUMENT_URI' => '/basic/web/index.php'
+    'DOCUMENT_ROOT' => '/www/belk/www'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.4.6'
+    'REMOTE_ADDR' => '5.19.200.233'
+    'REMOTE_PORT' => '53445'
+    'SERVER_ADDR' => '192.168.1.103'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'belk.ljs.ru'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'belk.ljs.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CONTENT_LENGTH' => '213'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://belk.ljs.ru'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://belk.ljs.ru/basic/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=40a6eda0142325f618b1cfe87c2315a8125038f0aef2839010e3c722947966c6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22x40WHGthoe2R8weQSChFYcRsZglK00EJ%22%3B%7D'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480009074.657
+    'REQUEST_TIME' => 1480009074
+]
+2016-11-24 17:41:15 [5.19.200.233][3][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 5.19.200.233
+2016-11-24 17:41:15 [5.19.200.233][3][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf' => 'S1B2dldXSjQzZEYhHxA.XCQ1RCRvIC9lGBMeMA40GEcRNxo9Z2cPfg=='
+    'LoginForm' => [
+        'username' => 'pasportbelk@mail.ru'
+        'password' => '111111'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf' => '40a6eda0142325f618b1cfe87c2315a8125038f0aef2839010e3c722947966c6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"x40WHGthoe2R8weQSChFYcRsZglK00EJ\";}'
+    'PHPSESSID' => 'iflkjfdu55seuo5j02oa5vi6c6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 3
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_METHOD' => 'POST'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '213'
+    'SCRIPT_FILENAME' => '/www/belk/www/basic/web/index.php'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'REQUEST_URI' => '/basic/web/index.php?r=site%2Flogin'
+    'DOCUMENT_URI' => '/basic/web/index.php'
+    'DOCUMENT_ROOT' => '/www/belk/www'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.4.6'
+    'REMOTE_ADDR' => '5.19.200.233'
+    'REMOTE_PORT' => '53544'
+    'SERVER_ADDR' => '192.168.1.103'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'belk.ljs.ru'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'belk.ljs.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CONTENT_LENGTH' => '213'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://belk.ljs.ru'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://belk.ljs.ru/basic/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=40a6eda0142325f618b1cfe87c2315a8125038f0aef2839010e3c722947966c6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22x40WHGthoe2R8weQSChFYcRsZglK00EJ%22%3B%7D; PHPSESSID=iflkjfdu55seuo5j02oa5vi6c6'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480009275.5429
+    'REQUEST_TIME' => 1480009275
+]
+2016-11-24 17:41:15 [5.19.200.233][3][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 5.19.200.233
+    in /spool/www/belk/www/basic/views/layouts/main.php:75
+    in /spool/www/belk/www/basic/controllers/SiteController.php:63
+2016-11-24 17:41:15 [5.19.200.233][3][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 5.19.200.233
+2016-11-24 17:41:15 [5.19.200.233][3][-][info][application] $_COOKIE = [
+    '_csrf' => '40a6eda0142325f618b1cfe87c2315a8125038f0aef2839010e3c722947966c6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"x40WHGthoe2R8weQSChFYcRsZglK00EJ\";}'
+    'PHPSESSID' => 'iflkjfdu55seuo5j02oa5vi6c6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 3
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_FILENAME' => '/www/belk/www/basic/web/index.php'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'REQUEST_URI' => '/basic/web/index.php'
+    'DOCUMENT_URI' => '/basic/web/index.php'
+    'DOCUMENT_ROOT' => '/www/belk/www'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.4.6'
+    'REMOTE_ADDR' => '5.19.200.233'
+    'REMOTE_PORT' => '53544'
+    'SERVER_ADDR' => '192.168.1.103'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'belk.ljs.ru'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'belk.ljs.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://belk.ljs.ru/basic/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=40a6eda0142325f618b1cfe87c2315a8125038f0aef2839010e3c722947966c6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22x40WHGthoe2R8weQSChFYcRsZglK00EJ%22%3B%7D; PHPSESSID=iflkjfdu55seuo5j02oa5vi6c6'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480009275.5804
+    'REQUEST_TIME' => 1480009275
+]
