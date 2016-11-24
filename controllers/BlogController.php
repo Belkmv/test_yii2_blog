@@ -62,17 +62,20 @@ class BlogController extends Controller
      * @return mixed
      */
     public function actionCreate()
-    {
-        $model = new Blog();
-
+     {
+         $model = new Blog();
+         if(!empty(Yii::$app->request->post()))
+        {
+            $model->user_id = Yii::$app->user->id;
+         }
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
-        } else {
-            return $this->render('create', [
-                'model' => $model,
-            ]);
-        }
-    }
+                return $this->redirect(['view', 'id' => $model->id]);
+         } else {
+                return $this->render('create', [
+                        'model' => $model,
+                    ]);
+         }
+     }
 
     /**
      * Updates an existing Blog model.
