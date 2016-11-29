@@ -44,8 +44,6 @@ use yii\helpers\Inflector;
  * ]);
  * ```
  *
- * For more details and usage information on DetailView, see the [guide article on data widgets](guide:output-data-widgets).
- *
  * @author Qiang Xue <qiang.xue@gmail.com>
  * @since 2.0
  */
@@ -157,7 +155,7 @@ class DetailView extends Widget
     /**
      * Renders a single attribute.
      * @param array $attribute the specification of the attribute to be rendered.
-     * @param int $index the zero-based index of the attribute in the [[attributes]] array
+     * @param integer $index the zero-based index of the attribute in the [[attributes]] array
      * @return string the rendering result
      */
     protected function renderAttribute($attribute, $index)

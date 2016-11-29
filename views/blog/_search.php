@@ -23,7 +23,6 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'article') ?>
 
-    <?= $form->field($model, 'create_date') ?>
 
     <div class="form-group">
         <?= Html::submitButton('Поиск', ['class' => 'btn btn-primary']) ?>
