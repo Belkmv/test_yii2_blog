@@ -52,8 +52,8 @@ class Blog extends \yii\db\ActiveRecord
             'id' => 'ID',
             'user_id' => 'Пользователь',
             'description' => 'Описание',
-            'article' => 'Article',
-            'create_date' => 'Create Date',
+            'article' => 'Статья',
+            'create_date' => 'Дата',
         ];
     }
 
